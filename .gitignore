@@ -97,3 +97,5 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+F or F/Library/PackageCache/com.unity.burst@1.8.18/.Runtime/libburst-llvm-16.dylib
+F or F/Library/ArtifactDB

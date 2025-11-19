@@ -99,3 +99,7 @@ InitTestScene*.unity*
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 F or F/Library/PackageCache/com.unity.burst@1.8.18/.Runtime/libburst-llvm-16.dylib
 F or F/Library/ArtifactDB
+F or F/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/local_aar_for_lint/release/out.aar
+F or F/Library/Bee/artifacts/Android/il2cppOutput/build/arm64-v8a/libil2cpp.dbg.so
+F or F/Library/Bee/artifacts/Android/d8kzr/libil2cpp.so
+F or F/Library/Bee/artifacts/objcopy_5lmi/libil2cpp.dbg.so

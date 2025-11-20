@@ -5,9 +5,10 @@ Flight or Fight is an immersive Virtual Reality (VR) educational game designed t
 
 The game emphasizes interactive decision-making, allowing the player to:
 
-Run using a toggle control to escape poachers.
+Run using the left toggle control to escape poachers.
 
-Fight using a trigger button to defend against threats.
+Use the right toggle to turn. Run over your enemy.
+
 
 Stay still, or risk being caught.
 

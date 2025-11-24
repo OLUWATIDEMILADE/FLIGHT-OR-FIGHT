@@ -47,8 +47,6 @@ Web Demo (Optional): Lightweight interactive prototype using WebGL / WebXR for b
 GITHUB LINK
 https://github.com/OLUWATIDEMILADE/FLIGHT-OR-FIGHT 
 
-FIGMA and Video
-https://docs.google.com/document/d/1Keqg07MAkm8Ng4T9Mx7zirCYePBu3yVrtd9RmoaU5nY/edit?usp=sharing
 
 The DEPLOYED VERSION
 https://olorunsola-demilade.itch.io/flight-or-fight 

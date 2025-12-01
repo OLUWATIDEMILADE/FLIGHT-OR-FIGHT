@@ -234,8 +234,7 @@ UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AudioClip::get_length
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
-UnityEngine.AudioSource::get_isPlaying
-UnityEngine.AudioSource::Pause
+UnityEngine.AudioSource::Play
 UnityEngine.AudioSource::PlayHelper
 UnityEngine.AudioSource::PlayOneShotHelper
 UnityEngine.AudioSource::set_clip
@@ -860,7 +859,6 @@ UnityEngine.PlayerConnectionInternal::PollInternal
 UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
-UnityEngine.PlayerPrefs::HasKey
 UnityEngine.PlayerPrefs::TrySetFloat
 UnityEngine.PlayerPrefs::TrySetInt
 UnityEngine.PlayerPrefs::GetInt

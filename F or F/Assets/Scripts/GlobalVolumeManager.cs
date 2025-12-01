@@ -1,16 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalVolumeManager : MonoBehaviour
 {
     public static GlobalVolumeManager Instance;
 
-    [Range(0f, 1f)]
-    public float masterVolume = 1f;
+    [Range(0f, 1f)] public float masterVolume = 1f;
     public bool isMuted = false;
 
     private void Awake()
     {
-        // Singleton pattern
+        // Singleton
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -21,37 +21,46 @@ public class GlobalVolumeManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         LoadSettings();
-        ApplySettings();
+        ApplyToAllAudioSources();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ApplyToAllAudioSources();
     }
 
     public void SetVolume(float value)
     {
-        masterVolume = value;
-        ApplySettings();
+        masterVolume = Mathf.Clamp01(value);
         SaveSettings();
+        ApplyToAllAudioSources();
     }
 
-    public void SetMute(bool value)
+    // 🔥 NEW — Mute Toggle
+    public void ToggleMute()
     {
-        isMuted = value;
-        ApplySettings();
+        isMuted = !isMuted;      // Switch between true/false
         SaveSettings();
+        ApplyToAllAudioSources();
     }
 
-    private void ApplySettings()
+    public void ApplyToAllAudioSources()
     {
-        AudioSource[] sources = FindObjectsOfType<AudioSource>();
+        float finalVolume = isMuted ? 0f : masterVolume;
 
-        foreach (AudioSource src in sources)
+        foreach (AudioSource audio in FindObjectsOfType<AudioSource>())
         {
-            if (isMuted)
-            {
-                src.volume = 0f;
-            }
-            else
-            {
-                src.volume = masterVolume;
-            }
+            audio.volume = finalVolume;
         }
     }
 
@@ -63,10 +72,7 @@ public class GlobalVolumeManager : MonoBehaviour
 
     private void LoadSettings()
     {
-        if (PlayerPrefs.HasKey("MasterVolume"))
-            masterVolume = PlayerPrefs.GetFloat("MasterVolume");
-
-        if (PlayerPrefs.HasKey("Muted"))
-            isMuted = PlayerPrefs.GetInt("Muted") == 1;
+        masterVolume = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        isMuted = PlayerPrefs.GetInt("Muted", 0) == 1;
     }
 }

@@ -4,7 +4,6 @@ ScriptsOnlyBuild:
     - ArcherController
     - ArcherSpawner
     - Arrow
-    - CameraHeightLock
     - ElephantLifeManager
     - GlobalVolumeManager
     - Navigation
@@ -122,10 +121,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -228,11 +225,11 @@ ScriptsOnlyBuild:
     fullTypeName: Navigation
     methodName: GoToNextScene
   - assembly: Assembly-CSharp
+    fullTypeName: GlobalVolumeManager
+    methodName: ToggleMute
+  - assembly: Assembly-CSharp
     fullTypeName: Navigation
     methodName: ShowHome
-  - assembly: Assembly-CSharp
-    fullTypeName: GlobalVolumeManager
-    methodName: SetMute
   - assembly: Assembly-CSharp
     fullTypeName: Navigation
     methodName: ShowSettings
@@ -275,12 +272,15 @@ ScriptsOnlyBuild:
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: VRButtonController
     methodName: LoadScene
-  - assembly: Assembly-CSharp
-    fullTypeName: VRButtonController
-    methodName: ToggleAudio
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   sceneClasses:
     Assets/Scenes/BasicScene.unity:
     - Class: 1
@@ -328,7 +328,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16446}
+    - Class: 114
       Script: {instanceID: 16448}
+    - Class: 114
+      Script: {instanceID: 16500}
     - Class: 114
       Script: {instanceID: 16718}
     - Class: 114
@@ -378,11 +382,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 27290}
     - Class: 114
-      Script: {instanceID: 27856}
+      Script: {instanceID: 28064}
     - Class: 114
-      Script: {instanceID: 28066}
-    - Class: 114
-      Script: {instanceID: 28516}
+      Script: {instanceID: 28514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -404,6 +406,8 @@ ScriptsOnlyBuild:
     - Class: 205
       Script: {instanceID: 0}
     - Class: 210
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -477,7 +481,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 27756}
     - Class: 114
-      Script: {instanceID: 28516}
+      Script: {instanceID: 28514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -514,6 +518,10 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -648,9 +656,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 27752}
     - Class: 114
-      Script: {instanceID: 28516}
+      Script: {instanceID: 28514}
     - Class: 114
-      Script: {instanceID: 28568}
+      Script: {instanceID: 28566}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -3182,7 +3190,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 8ff2a9cbc6fb75024e7a92e29c002ad8
+      Hash: 7ef8493789c447fe05c5e2bc661e4bd1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VRButtonController
@@ -3198,12 +3206,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.OpenXR.Features.MockRuntime.dll
     namespaceName: UnityEngine.XR.OpenXR.Features.Mock
     className: MockRuntime
-  - hash:
-      serializedVersion: 2
-      Hash: 030480b82c1ef16a302e37a005c98659
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraHeightLock
   - hash:
       serializedVersion: 2
       Hash: 2881b217d5f6f88fcd24b28ce700464e

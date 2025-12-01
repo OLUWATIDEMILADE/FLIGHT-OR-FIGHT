@@ -63,72 +63,72 @@ extern void Arrow_Update_mCD196E06CFB34D01F63A834F64D65615E65E48DF (void);
 extern void Arrow_OnCollisionEnter_m6F430F359995B2E3B1C6A877CC116771B24F970F (void);
 // 0x00000019 System.Void Arrow::.ctor()
 extern void Arrow__ctor_m94A543A34B422016042ADD49083D7261EB6B2F80 (void);
-// 0x0000001A System.Void CameraHeightLock::LateUpdate()
-extern void CameraHeightLock_LateUpdate_mDB955B359AB99F286D5E8CC69E6EBCCC07BB4E7A (void);
-// 0x0000001B System.Void CameraHeightLock::.ctor()
-extern void CameraHeightLock__ctor_mB343A0E5B22A44E33A62FCED3EB22B2822C0381A (void);
-// 0x0000001C System.Void ElephantLifeManager::Start()
+// 0x0000001A System.Void ElephantLifeManager::Start()
 extern void ElephantLifeManager_Start_m7E10F416BE124B023E551AF934664A566AA5C4D1 (void);
-// 0x0000001D System.Void ElephantLifeManager::UpdateLivesUI()
+// 0x0000001B System.Void ElephantLifeManager::UpdateLivesUI()
 extern void ElephantLifeManager_UpdateLivesUI_mA50F2995FA7111C1A6A9214FA4D270019EE8DB47 (void);
-// 0x0000001E System.Void ElephantLifeManager::ReduceLife(System.Int32)
+// 0x0000001C System.Void ElephantLifeManager::ReduceLife(System.Int32)
 extern void ElephantLifeManager_ReduceLife_mF40E8E0685574F3C60A3443B6AEA3605680B4465 (void);
-// 0x0000001F System.Void ElephantLifeManager::OnCollisionEnter(UnityEngine.Collision)
+// 0x0000001D System.Void ElephantLifeManager::OnCollisionEnter(UnityEngine.Collision)
 extern void ElephantLifeManager_OnCollisionEnter_m6BD965235C20040E17461159D70225B27B8B3A0C (void);
-// 0x00000020 System.Void ElephantLifeManager::OnTriggerEnter(UnityEngine.Collider)
+// 0x0000001E System.Void ElephantLifeManager::OnTriggerEnter(UnityEngine.Collider)
 extern void ElephantLifeManager_OnTriggerEnter_mCD9B6F9EB8DAB41C9FA310854DA7F17AAB69836A (void);
-// 0x00000021 System.Void ElephantLifeManager::.ctor()
+// 0x0000001F System.Void ElephantLifeManager::.ctor()
 extern void ElephantLifeManager__ctor_m69D9456522A35498CFBFB315BAD55CE9B19384B8 (void);
-// 0x00000022 System.Void ElephantSounds::Update()
+// 0x00000020 System.Void ElephantSounds::Update()
 extern void ElephantSounds_Update_m884763159BB7FEBDD22B45388CE83F9275EAF3C3 (void);
-// 0x00000023 System.Void ElephantSounds::HandleTriggerSound()
+// 0x00000021 System.Void ElephantSounds::HandleTriggerSound()
 extern void ElephantSounds_HandleTriggerSound_m0DFD7C43D0B16A4B6FD3DE8A037A1865808BE147 (void);
-// 0x00000024 System.Void ElephantSounds::.ctor()
+// 0x00000022 System.Void ElephantSounds::.ctor()
 extern void ElephantSounds__ctor_m9CDCAFBE3A61D5848502065D8025AD3AE8619380 (void);
-// 0x00000025 System.Void GlobalVolumeManager::Awake()
+// 0x00000023 System.Void GlobalVolumeManager::Awake()
 extern void GlobalVolumeManager_Awake_m0E32448E1C3522F72EBD8CFCDD2D6841BA359260 (void);
-// 0x00000026 System.Void GlobalVolumeManager::SetVolume(System.Single)
+// 0x00000024 System.Void GlobalVolumeManager::OnEnable()
+extern void GlobalVolumeManager_OnEnable_m62A4B4FED4B0168183465A21BAD4FE751B148ABE (void);
+// 0x00000025 System.Void GlobalVolumeManager::OnDisable()
+extern void GlobalVolumeManager_OnDisable_m79E9E956B09A28F7AAD79A6844105EA4515F911A (void);
+// 0x00000026 System.Void GlobalVolumeManager::OnSceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+extern void GlobalVolumeManager_OnSceneLoaded_mA65D4DA7DEF0EA65705F849099713F4B5149AE52 (void);
+// 0x00000027 System.Void GlobalVolumeManager::SetVolume(System.Single)
 extern void GlobalVolumeManager_SetVolume_m02CF13D0FF925618C33F81ED9A3DC21965726802 (void);
-// 0x00000027 System.Void GlobalVolumeManager::SetMute(System.Boolean)
-extern void GlobalVolumeManager_SetMute_mA03D5742813A21984D8F8086B8EEBA5E65B57D1E (void);
-// 0x00000028 System.Void GlobalVolumeManager::ApplySettings()
-extern void GlobalVolumeManager_ApplySettings_mB6202EC1D26C75F6167FE608F54B2FC1D7C88462 (void);
-// 0x00000029 System.Void GlobalVolumeManager::SaveSettings()
+// 0x00000028 System.Void GlobalVolumeManager::ToggleMute()
+extern void GlobalVolumeManager_ToggleMute_m94937F1BA12326BF5F8C5B2F41FB76DCC62AA6DA (void);
+// 0x00000029 System.Void GlobalVolumeManager::ApplyToAllAudioSources()
+extern void GlobalVolumeManager_ApplyToAllAudioSources_m7CEDB2CB0B88066ED746BBB906FCB2EB5506EECE (void);
+// 0x0000002A System.Void GlobalVolumeManager::SaveSettings()
 extern void GlobalVolumeManager_SaveSettings_m927BD7BC5AD80FEB214E4FA3D4BDBA5D9B513199 (void);
-// 0x0000002A System.Void GlobalVolumeManager::LoadSettings()
+// 0x0000002B System.Void GlobalVolumeManager::LoadSettings()
 extern void GlobalVolumeManager_LoadSettings_m2B4FCE400414905790908156F5E03D5A7A603C15 (void);
-// 0x0000002B System.Void GlobalVolumeManager::.ctor()
+// 0x0000002C System.Void GlobalVolumeManager::.ctor()
 extern void GlobalVolumeManager__ctor_mE04C4375A474CB52B43A29CAA749FFA3C95902DB (void);
-// 0x0000002C System.Void Navigation::Start()
+// 0x0000002D System.Void Navigation::Start()
 extern void Navigation_Start_m852E927B366FFB2F010304804FAA1F8CEF8598A6 (void);
-// 0x0000002D System.Void Navigation::ShowHome()
+// 0x0000002E System.Void Navigation::ShowHome()
 extern void Navigation_ShowHome_m492836A385590B7545F1ECCAF06AD50374DC2307 (void);
-// 0x0000002E System.Void Navigation::ShowInfo()
+// 0x0000002F System.Void Navigation::ShowInfo()
 extern void Navigation_ShowInfo_mA39813B0E435D08D5EC01ABBFB47D991C4AF2A32 (void);
-// 0x0000002F System.Void Navigation::ShowSettings()
+// 0x00000030 System.Void Navigation::ShowSettings()
 extern void Navigation_ShowSettings_mE445DFCE0F2C9FC2E68D6CBF49C65D909CD804D6 (void);
-// 0x00000030 System.Void Navigation::GoToNextScene()
+// 0x00000031 System.Void Navigation::GoToNextScene()
 extern void Navigation_GoToNextScene_mA0EEF80EFAA7E6D23FF8DF812BA340D655D183C2 (void);
-// 0x00000031 System.Void Navigation::.ctor()
+// 0x00000032 System.Void Navigation::.ctor()
 extern void Navigation__ctor_m63EA9B52DBD1B65338196218077F4AF599724AD8 (void);
-// 0x00000032 System.Void SceneLoader::LoadNewScene(System.String)
+// 0x00000033 System.Void SceneLoader::LoadNewScene(System.String)
 extern void SceneLoader_LoadNewScene_m9083D9B7886E0AD04DFCB4F16CCE3B00F812073D (void);
-// 0x00000033 System.Void SceneLoader::LoadPreviousScene()
+// 0x00000034 System.Void SceneLoader::LoadPreviousScene()
 extern void SceneLoader_LoadPreviousScene_m661560227B2C0EBE5C3E1B77C92EC2BE87C406A3 (void);
-// 0x00000034 System.Void SceneLoader::GoBackToPreviousSceneButton()
+// 0x00000035 System.Void SceneLoader::GoBackToPreviousSceneButton()
 extern void SceneLoader_GoBackToPreviousSceneButton_mC383920513467A232BD4349C5276CADC42A3F222 (void);
-// 0x00000035 System.Void SceneLoader::.ctor()
+// 0x00000036 System.Void SceneLoader::.ctor()
 extern void SceneLoader__ctor_m2248766DF38AF07562AD31501C7275B8DF1B7D29 (void);
-// 0x00000036 System.Void SceneLoader::.cctor()
+// 0x00000037 System.Void SceneLoader::.cctor()
 extern void SceneLoader__cctor_m9965195DEE8EA0EB51538659097FD4CA1FF2A6B3 (void);
-// 0x00000037 System.Void UIFollowCamera::LateUpdate()
+// 0x00000038 System.Void UIFollowCamera::LateUpdate()
 extern void UIFollowCamera_LateUpdate_m13DC83BBA5F45BE72FAA6E943EF5DAC2A415A431 (void);
-// 0x00000038 System.Void UIFollowCamera::.ctor()
+// 0x00000039 System.Void UIFollowCamera::.ctor()
 extern void UIFollowCamera__ctor_m88888CBD2E114F83555B5564420EA30FCAEDFBE0 (void);
-// 0x00000039 System.Void VRButtonController::LoadScene()
+// 0x0000003A System.Void VRButtonController::LoadScene()
 extern void VRButtonController_LoadScene_m867EAFE90DC5B7647FA8F0CA5B7BB902015A2A49 (void);
-// 0x0000003A System.Void VRButtonController::ToggleAudio()
-extern void VRButtonController_ToggleAudio_mABE779FADB7D0CF7F816D297395E2E656EC25DE9 (void);
 // 0x0000003B System.Void VRButtonController::.ctor()
 extern void VRButtonController__ctor_m1E5C1D4C2373DAE1E9B3CC4D08122898DDF96D56 (void);
 // 0x0000003C System.Void Unity.VRTemplate.AnchorVisuals::Start()
@@ -712,8 +712,6 @@ static Il2CppMethodPointer s_methodPointers[349] =
 	Arrow_Update_mCD196E06CFB34D01F63A834F64D65615E65E48DF,
 	Arrow_OnCollisionEnter_m6F430F359995B2E3B1C6A877CC116771B24F970F,
 	Arrow__ctor_m94A543A34B422016042ADD49083D7261EB6B2F80,
-	CameraHeightLock_LateUpdate_mDB955B359AB99F286D5E8CC69E6EBCCC07BB4E7A,
-	CameraHeightLock__ctor_mB343A0E5B22A44E33A62FCED3EB22B2822C0381A,
 	ElephantLifeManager_Start_m7E10F416BE124B023E551AF934664A566AA5C4D1,
 	ElephantLifeManager_UpdateLivesUI_mA50F2995FA7111C1A6A9214FA4D270019EE8DB47,
 	ElephantLifeManager_ReduceLife_mF40E8E0685574F3C60A3443B6AEA3605680B4465,
@@ -724,9 +722,12 @@ static Il2CppMethodPointer s_methodPointers[349] =
 	ElephantSounds_HandleTriggerSound_m0DFD7C43D0B16A4B6FD3DE8A037A1865808BE147,
 	ElephantSounds__ctor_m9CDCAFBE3A61D5848502065D8025AD3AE8619380,
 	GlobalVolumeManager_Awake_m0E32448E1C3522F72EBD8CFCDD2D6841BA359260,
+	GlobalVolumeManager_OnEnable_m62A4B4FED4B0168183465A21BAD4FE751B148ABE,
+	GlobalVolumeManager_OnDisable_m79E9E956B09A28F7AAD79A6844105EA4515F911A,
+	GlobalVolumeManager_OnSceneLoaded_mA65D4DA7DEF0EA65705F849099713F4B5149AE52,
 	GlobalVolumeManager_SetVolume_m02CF13D0FF925618C33F81ED9A3DC21965726802,
-	GlobalVolumeManager_SetMute_mA03D5742813A21984D8F8086B8EEBA5E65B57D1E,
-	GlobalVolumeManager_ApplySettings_mB6202EC1D26C75F6167FE608F54B2FC1D7C88462,
+	GlobalVolumeManager_ToggleMute_m94937F1BA12326BF5F8C5B2F41FB76DCC62AA6DA,
+	GlobalVolumeManager_ApplyToAllAudioSources_m7CEDB2CB0B88066ED746BBB906FCB2EB5506EECE,
 	GlobalVolumeManager_SaveSettings_m927BD7BC5AD80FEB214E4FA3D4BDBA5D9B513199,
 	GlobalVolumeManager_LoadSettings_m2B4FCE400414905790908156F5E03D5A7A603C15,
 	GlobalVolumeManager__ctor_mE04C4375A474CB52B43A29CAA749FFA3C95902DB,
@@ -744,7 +745,6 @@ static Il2CppMethodPointer s_methodPointers[349] =
 	UIFollowCamera_LateUpdate_m13DC83BBA5F45BE72FAA6E943EF5DAC2A415A431,
 	UIFollowCamera__ctor_m88888CBD2E114F83555B5564420EA30FCAEDFBE0,
 	VRButtonController_LoadScene_m867EAFE90DC5B7647FA8F0CA5B7BB902015A2A49,
-	VRButtonController_ToggleAudio_mABE779FADB7D0CF7F816D297395E2E656EC25DE9,
 	VRButtonController__ctor_m1E5C1D4C2373DAE1E9B3CC4D08122898DDF96D56,
 	AnchorVisuals_Start_m84A5BBC02FFBE8BF40D0A3E2D7B36D1FD701DED6,
 	AnchorVisuals_Update_mD2CF52D5A41427FB49A899A2478D687B470A7EDE,
@@ -1077,8 +1077,6 @@ static const int32_t s_InvokerIndices[349] =
 	7398,
 	7398,
 	7398,
-	7398,
-	7398,
 	5806,
 	5839,
 	5839,
@@ -1087,8 +1085,11 @@ static const int32_t s_InvokerIndices[349] =
 	7398,
 	7398,
 	7398,
+	7398,
+	7398,
+	3290,
 	5898,
-	5730,
+	7398,
 	7398,
 	7398,
 	7398,
@@ -1104,7 +1105,6 @@ static const int32_t s_InvokerIndices[349] =
 	7398,
 	7398,
 	13195,
-	7398,
 	7398,
 	7398,
 	7398,
@@ -1406,10 +1406,10 @@ static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[1] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[4] = 
 {
-	{ 0x02000030, { 0, 6 } },
-	{ 0x02000031, { 6, 2 } },
-	{ 0x02000032, { 8, 6 } },
-	{ 0x02000033, { 14, 2 } },
+	{ 0x0200002F, { 0, 6 } },
+	{ 0x02000030, { 6, 2 } },
+	{ 0x02000031, { 8, 6 } },
+	{ 0x02000032, { 14, 2 } },
 };
 extern const uint32_t g_rgctx_InputFeatureUsage_1_tF3618643719488EF93CEA5C315F9098D9F2C7091;
 extern const uint32_t g_rgctx_InputFeatureUsage_1__ctor_m2A5198F34EED1B783EA0852C345646201D0D1679;

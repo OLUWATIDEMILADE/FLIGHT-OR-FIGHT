@@ -1026,13 +1026,9 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.AudioSource
 
-		//System.Boolean UnityEngine.AudioSource::get_isPlaying()
-		void Register_UnityEngine_AudioSource_get_isPlaying();
-		Register_UnityEngine_AudioSource_get_isPlaying();
-
-		//System.Void UnityEngine.AudioSource::Pause()
-		void Register_UnityEngine_AudioSource_Pause();
-		Register_UnityEngine_AudioSource_Pause();
+		//System.Void UnityEngine.AudioSource::Play(System.Double)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
 
 		//System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
 		void Register_UnityEngine_AudioSource_PlayHelper();
@@ -3801,10 +3797,6 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.PlayerConnectionInternal
 
 	//Start Registrations for type : UnityEngine.PlayerPrefs
-
-		//System.Boolean UnityEngine.PlayerPrefs::HasKey(System.String)
-		void Register_UnityEngine_PlayerPrefs_HasKey();
-		Register_UnityEngine_PlayerPrefs_HasKey();
 
 		//System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
 		void Register_UnityEngine_PlayerPrefs_TrySetFloat();

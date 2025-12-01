@@ -352,7 +352,6 @@
 "Assets/Scripts/ArcherController.cs"
 "Assets/Scripts/ArcherSpawner.cs"
 "Assets/Scripts/Arrow.cs"
-"Assets/Scripts/CameraHeightLock.cs"
 "Assets/Scripts/ElephantLifeManager.cs"
 "Assets/Scripts/ElephantSounds.cs"
 "Assets/Scripts/GlobalVolumeManager.cs"

@@ -56,22 +56,22 @@ extern void PCMSetPositionCallback__ctor_mD16F77DDB552EB69BB3F5EF39420B2F09F9545
 extern void PCMSetPositionCallback_Invoke_m434D4F02FA25F91DF6199EC5A799C551C7F93702 (void);
 // 0x00000016 System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
 extern void AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960 (void);
-// 0x00000017 System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
+// 0x00000017 System.Void UnityEngine.AudioSource::Play(System.Double)
+extern void AudioSource_Play_m10DB5ACD1CC32EE433DBC10416B1450A30DE5F16 (void);
+// 0x00000018 System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
 extern void AudioSource_PlayOneShotHelper_mD110EAF42353687BD0B1190EEF30F0C65A4CF265 (void);
-// 0x00000018 System.Void UnityEngine.AudioSource::set_volume(System.Single)
+// 0x00000019 System.Void UnityEngine.AudioSource::set_volume(System.Single)
 extern void AudioSource_set_volume_mD902BBDBBDE0E3C148609BF3C05096148E90F2C0 (void);
-// 0x00000019 System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+// 0x0000001A System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
 extern void AudioSource_set_clip_mFF441895E274286C88D9C75ED5CA1B1B39528D70 (void);
-// 0x0000001A System.Void UnityEngine.AudioSource::Play()
+// 0x0000001B System.Void UnityEngine.AudioSource::Play()
 extern void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (void);
-// 0x0000001B System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip)
+// 0x0000001C System.Void UnityEngine.AudioSource::Play(System.UInt64)
+extern void AudioSource_Play_mC9D19FA54347ED102AD9913E3E7528BE969199FB (void);
+// 0x0000001D System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip)
 extern void AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112 (void);
-// 0x0000001C System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
+// 0x0000001E System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
 extern void AudioSource_PlayOneShot_mF6FE95C58996B38EF6E7F7482F95F5E15E0AB30B (void);
-// 0x0000001D System.Void UnityEngine.AudioSource::Pause()
-extern void AudioSource_Pause_m2C2A09359E8AA924FEADECC1AFEA519B3C915B26 (void);
-// 0x0000001E System.Boolean UnityEngine.AudioSource::get_isPlaying()
-extern void AudioSource_get_isPlaying_mC203303F2F7146B2C056CB47B9391463FDF408FC (void);
 // 0x0000001F System.Void UnityEngine.AudioSource::PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3)
 extern void AudioSource_PlayClipAtPoint_mA78328A70D3F1088B588EF6F811AAD6577F2B7BF (void);
 // 0x00000020 System.Void UnityEngine.AudioSource::PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
@@ -122,14 +122,14 @@ static Il2CppMethodPointer s_methodPointers[43] =
 	PCMSetPositionCallback__ctor_mD16F77DDB552EB69BB3F5EF39420B2F09F95455B,
 	PCMSetPositionCallback_Invoke_m434D4F02FA25F91DF6199EC5A799C551C7F93702,
 	AudioSource_PlayHelper_m4DE8C48925C3548BED306DAB9F87939F24A46960,
+	AudioSource_Play_m10DB5ACD1CC32EE433DBC10416B1450A30DE5F16,
 	AudioSource_PlayOneShotHelper_mD110EAF42353687BD0B1190EEF30F0C65A4CF265,
 	AudioSource_set_volume_mD902BBDBBDE0E3C148609BF3C05096148E90F2C0,
 	AudioSource_set_clip_mFF441895E274286C88D9C75ED5CA1B1B39528D70,
 	AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3,
+	AudioSource_Play_mC9D19FA54347ED102AD9913E3E7528BE969199FB,
 	AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112,
 	AudioSource_PlayOneShot_mF6FE95C58996B38EF6E7F7482F95F5E15E0AB30B,
-	AudioSource_Pause_m2C2A09359E8AA924FEADECC1AFEA519B3C915B26,
-	AudioSource_get_isPlaying_mC203303F2F7146B2C056CB47B9391463FDF408FC,
 	AudioSource_PlayClipAtPoint_mA78328A70D3F1088B588EF6F811AAD6577F2B7BF,
 	AudioSource_PlayClipAtPoint_mF9D129487C356127ADA3AB5C0A67C7D00F26E3DD,
 	AudioSource_set_loop_m834A590939D8456008C0F897FD80B0ECFFB7FE56,
@@ -179,14 +179,14 @@ static const int32_t s_InvokerIndices[43] =
 	3235,
 	5806,
 	10907,
+	5757,
 	9817,
 	5898,
 	5839,
 	7398,
+	5955,
 	5839,
 	3249,
-	7398,
-	7148,
 	10908,
 	9829,
 	5730,
